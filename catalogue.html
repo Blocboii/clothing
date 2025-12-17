@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CONTENT DETAILS | E-COMMERCE WEBSITE </title>
+
+    <!-- <link rel="stylesheet" href="/box1.css"> -->
+    <link rel="stylesheet" href="css/catalogue.css">
+
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+
+</head>
+
+<body>
+<!-- HEADER -->
+<div id="1"></div>
+<script>
+    load("header.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(1).innerHTML = req.responseText;
+    }
+</script>
+
+<h1 class="page-title">Product List</h1>
+
+
+<!-- Catalogue container -->
+<div id="catalogue"></div>
+
+
+<script src="catalogue.js"></script>
+
+<!-- FOOTER -->
+<div id="4"></div>
+<script>
+    load("footer.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(4).innerHTML = req.responseText;
+    }
+</script>
+</body>
+</html>

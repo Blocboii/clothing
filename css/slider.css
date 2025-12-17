@@ -1,0 +1,48 @@
+.scrollable-content {
+position: relative;
+min-height: 41vh;
+height: auto;
+}
+
+
+.slider-container {
+position: relative;
+width: 100%;
+max-width: 600px;
+margin: 40px auto;
+overflow: hidden;
+border: 1px solid #ccc;
+}
+
+
+.image-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 300px;
+}
+
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+.btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0,0,0,0.5);
+color: white;
+border: none;
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 50%;
+z-index: 10;
+}
+
+
+.btn.prev { left: 10px; }
+.btn.next { right: 10px; }
