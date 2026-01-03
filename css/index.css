@@ -3,15 +3,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-  background-color: black;
-}
+
 
 .video-background-container {
     position: relative;
     height: 100vh; /* Full viewport height */
     overflow: hidden;
-    /* This transition helps when the user hovers over the container itself, 
+    /* This transition helps when the user hovers over the container itself,
        but typically the hover is applied to an inner element */
 }
 
