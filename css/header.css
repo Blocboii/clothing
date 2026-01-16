@@ -4,13 +4,13 @@ body{
 
 #badge{
     position: absolute;
-    background-color: rgb(109, 228, 4);
+    background-color: rgb(109, 116, 104);
     color: rgb(223, 217, 217);
     border-radius: 50%;
     padding: 5px 8px;
     font-size: 14px;
     top: 10px;
-    right: 158px;
+    right: 15px;
 }
 #container{
    /* background-color: rgb(132, 77, 77); */
@@ -63,6 +63,7 @@ body{
 #user{
     display: flex;
     align-items: center;
+
 }
 .userIcon{
     font-size: 45px;

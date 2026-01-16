@@ -9,35 +9,18 @@ body {
 
 
 .video-background-container {
-    position: relative;
-    height: 100vh; /* Full viewport height */
+  height: fit-content;
     overflow: hidden;
-    /* This transition helps when the user hovers over the container itself,
-       but typically the hover is applied to an inner element */
 }
 
-#background-video {
-    position: fixed; /* Fixed position so it stays in the background while scrolling */
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1; /* Puts the video behind other content */
-    object-fit: cover; /* Ensures video covers the entire area without distortion */
-    transition: all 0.5s ease-in-out; /* Smooth transition for any changes (e.g., opacity, scale) */
-}
-
-/* Add an overlay to ensure content is readable and to enable transition effects */
-.video-background-container::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
-    z-index: -1;
-    transition: background-color 0.5s ease-in-out;
+#bg-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .content-overlay {
@@ -46,12 +29,12 @@ body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: white;
-    padding-top: 50vh; /* Adjust as needed */
+    padding-top: 40vh; /* Adjust as needed */
 }
 
 .content-overlay a {
   text-decoration: none;
-  color: rgb(99, 99, 156);
+  color: rgb(170, 245, 7);
   font-size: larger;
 }
 

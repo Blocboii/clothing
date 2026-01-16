@@ -11,12 +11,9 @@
 </head>
 <body>
     <div class="video-background-container">
-    <video autoplay muted loop playsinline id="background-video" poster="/img/img1.jpg">
-        <source src="/img/11.mp4" type="video/mp4">
-        <!-- Add additional formats like webm for better cross-browser compatibility -->
-        <source src="/img/11.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
+        <video id="bg-video" autoplay muted loop playsinline preload="metadata" poster="/img/img1.jpg">
+            <source src="/img/12.mp4" type="video/mp4" />
+        </video>
 
     <div class="content-overlay">
         <h1><a href="/main.html">R3GNYT</a></h1>

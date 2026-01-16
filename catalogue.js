@@ -10,19 +10,25 @@ let products = [
         id: 1,
         name: "Men's Hoodie",
         price: 12000,
-        preview: "images/hoodie.jpg"
+        preview: "/img/img3.jpg"
     },
     {
         id: 2,
         name: "Women's Jacket",
         price: 18000,
-        preview: "images/jacket.jpg"
+        preview: "/img/img4.jpg"
     },
     {
         id: 3,
         name: "Casual Sneakers",
         price: 25000,
-        preview: "images/sneakers.jpg"
+        preview: "/img/img1.jpg"
+    },
+    {
+        id: 4,
+        name: "Silver Versace Bracelet",
+        price: 39999,
+        preview: "/img/img2.jpg"
     }
 ]
 
